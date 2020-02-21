@@ -18,3 +18,4 @@ Follow instructions from that Python script, including editing the PhysiCell Mak
 $ make
 $ ftest
 ```
+However, on Windows, it seems you must first edit your PATH environment variable to include the path to the .dll, i.e., the LIBRR_LIBS path (and then open a new Command Prompt window for it to take effect).

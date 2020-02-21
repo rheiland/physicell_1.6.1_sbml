@@ -2,7 +2,7 @@
 
 
 ## Overview: 
-Demonstrate using PhysiCell togetheer with an intracellular (metabolic) model (represented as a SBML file) which is solved using libRoadRunner.
+Demonstrate using PhysiCell together with an intracellular (metabolic) model (represented as a SBML file) which is solved using libRoadRunner.
 
 ## Dependencies
 * modern g++ compiler (rf. Quickstart)

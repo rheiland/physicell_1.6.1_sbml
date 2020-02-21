@@ -87,7 +87,7 @@
 	</domain>
 	
 	<overall>
-		<max_time units="min">30</max_time> 
+		<max_time units="min">120</max_time> 
 		<time_units>min</time_units>
 		<space_units>micron</space_units>
 	</overall>
@@ -100,12 +100,12 @@
 		<folder>output</folder> <!-- use . for root --> 
 
 		<full_data>
-			<interval units="min">2</interval>
+			<interval units="min">6</interval>
 			<enable>true</enable>
 		</full_data>
 		
 		<SVG>
-			<interval units="min">2</interval>
+			<interval units="min">6</interval>
 			<enable>true</enable>
 		</SVG>
 		
@@ -141,8 +141,8 @@
 	
 	<user_parameters>
 		<random_seed type="int" units="dimensionless" description="random seed" hidden="true">0</random_seed> 
-		<persistence_time type="double" >1.0</persistence_time> 
-		<migration_speed type="double" >20.0</migration_speed> 
+		<persistence_time type="double" >0.0</persistence_time> 
+		<migration_speed type="double" >10.0</migration_speed> 
 		<migration_bias type="double" >1.0</migration_bias> 
 	</user_parameters>
 	

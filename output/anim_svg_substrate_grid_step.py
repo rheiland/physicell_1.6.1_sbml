@@ -412,7 +412,7 @@ def plot_svg():
   hlines = np.column_stack(np.broadcast_arrays(xs[0], ys, xs[-1], ys))
   vlines = np.column_stack(np.broadcast_arrays(xs, ys[0], xs, ys[-1]))
   grid_lines = np.concatenate([hlines, vlines]).reshape(-1, 2, 2)
-  line_collection = LineCollection(grid_lines, color="red", linewidths=0.5)
+  line_collection = LineCollection(grid_lines, color="gray", linewidths=0.5)
   ax = plt.gca()
   ax.add_collection(line_collection)
   ax.set_xlim(xs[0], xs[-1])

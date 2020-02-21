@@ -13,13 +13,14 @@ endif
 
 ARCH := native # best auto-tuning
 
-# LIBRR_DIR := sbml_fake_headers
+# LIBRR_DIR := placeholder
+#LIBRR_LIBS := placeholder
 LIBRR_DIR := /Users/heiland/libroadrunner/roadrunner-osx-10.9-cp36m
-#LIBRR_LIBS := 
 LIBRR_LIBS := /Users/heiland/libroadrunner/roadrunner-osx-10.9-cp36m/lib
+
 LIBRR_CFLAGS := -I${LIBRR_DIR}/include/rr/C
 # LIBRR_CFLAGS := -Isbml_fake_headers
-LIBRR_STUFF := "-L${LIBRR_LIBS} -lroadrunner_c_api "
+# LIBRR_STUFF := "-L${LIBRR_LIBS} -lroadrunner_c_api "
 
 # CFLAGS := -march=$(ARCH) -Ofast -s -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11
 CFLAGS := -march=$(ARCH) -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11

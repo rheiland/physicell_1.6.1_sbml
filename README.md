@@ -16,4 +16,5 @@ $ python setup_libroadrunner.py
 Follow instructions from that Python script, including editing the PhysiCell Makefile. Then:
 ```
 $ make
+$ ftest
 ```

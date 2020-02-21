@@ -199,7 +199,8 @@ int main( int argc, char* argv[] )
 				{	
 					sprintf( filename , "%s/snapshot%08u.svg" , PhysiCell_settings.folder.c_str() , PhysiCell_globals.SVG_output_index ); 
 					// SVG_plot( filename , microenvironment, 0.0 , PhysiCell_globals.current_time, cell_coloring_function );
-					SVG_plot( filename , microenvironment, 0.0 , PhysiCell_globals.current_time, energy_coloring_function );
+					// SVG_plot( filename , microenvironment, 0.0 , PhysiCell_globals.current_time, energy_coloring_function );
+					SVG_plot( filename , microenvironment, 0.0 , PhysiCell_globals.current_time, cell_coloring_function );
 					
 					PhysiCell_globals.SVG_output_index++; 
 					PhysiCell_globals.next_SVG_save_time  += PhysiCell_settings.SVG_save_interval;
@@ -242,6 +243,8 @@ int main( int argc, char* argv[] )
 	
 	std::cout << std::endl << "Total simulation runtime: " << std::endl; 
 	BioFVM::display_stopwatch_value( std::cout , BioFVM::runtime_stopwatch_value() ); 
+
+	// system("python email_sender.py");
 
 	return 0; 
 }
